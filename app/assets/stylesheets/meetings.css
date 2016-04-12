@@ -1,0 +1,65 @@
+#meetinginfo {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#memberslist {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#orTxt {
+    margin: 0px;
+    padding: 7px;
+}
+
+.navbar .navbar-header .navbar-brand:not(:hover) {
+    color: black !important;
+} 
+
+.navbar .navbar-header .navbar-brand: hover {
+    color: #FED136 !important;
+} 
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+  color: #fed136;
+}
+
+ul.nav a:not(:hover) { color: black !important; }
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: transparent;
+    color: #FED136;
+}
+
+.yay:not(:hover){
+    background-color: #FED136;
+    color: #097054;
+}
+
+.yay: hover {
+    color: black;
+}
+
+.navvy:not(:hover){
+    color: black;
+}
+
+.navvy: hover {
+    color: #FED136;
+}
+
+@media (max-width: 360px) {
+
+.dank li { display:inline; }
+
+#jnBtn {
+    margin-left: 9px;
+}
+
+}

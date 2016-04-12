@@ -1,0 +1,16 @@
+<center>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @dialogue.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @dialogue.email %>
+</p>
+
+<%= link_to 'Edit', edit_dialogue_path(@dialogue) %> |
+<%= link_to 'Back', '/' %>
+</center>

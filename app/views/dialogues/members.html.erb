@@ -1,0 +1,50 @@
+<center>
+<h1>Members List</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dialogues.each do |dialogue| %>
+      <tr>
+        <td><%= dialogue.name %></td>
+        <td><%= dialogue.email %></td>
+        <td><%= link_to 'Show', dialogue %></td>
+        <td><%= link_to 'Edit', edit_dialogue_path(dialogue) %></td>
+        <td><%= link_to 'Delete', dialogue, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Member', new_dialogue_path %>
+
+<h1>Names Only</h1>
+
+  <tbody>
+    <% @dialogues.each do |dialogue| %>
+      <tr>
+        <td><%= dialogue.name %><br/></td>
+      </tr>
+    <% end %>
+  </tbody>
+
+<h1>Emails Only</h1>
+
+  <tbody>
+    <% @dialogues.each do |dialogue| %>
+      <tr>
+        <td><%= dialogue.email %><br/></td>
+      </tr>
+    <% end %>
+  </tbody>
+
+</center>
